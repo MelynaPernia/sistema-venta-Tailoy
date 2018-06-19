@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button class="btn btn-success btn-sm mb-3 mt-3 mr-3">Nuevo</button>
+      <table class="table table-bordered table-sm">
+        <thead>
+        <tr>
+          <th scope="col">Nro</th>
+          <th scope="col">Comprobante</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Importe</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let venta of ventaLista; let i = index">
+
+          <td>{{ i + 1 }}</td>
+          <td>falta</td>
+          <td>{{ venta.cliente }}</td>
+          <td>{{ venta.importe }}</td>
+
+
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

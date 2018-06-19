@@ -1,0 +1,61 @@
+{
+  "usuario": [
+    {
+      "id": 1,
+      "usuario": "admin",
+      "contrasenna": "123456"
+    },
+    {
+      "id": 2,
+      "usuario": "juan",
+      "contrasenna": "123456"
+    },
+    {
+      "id": 3,
+      "usuario": "rosa",
+      "contrasenna": "123456"
+    }
+  ],
+  "ventas": [
+    {
+      "idVenta": 1,
+      "idUsuario": 1,
+      "cliente": "BANCO CONTINENTAL",
+      "tipoComprobante": "BOL",
+      "serieComprobante": "001",
+      "numeroComprobante": 1,
+      "importe": 12,
+      "productos": [
+        {
+          "idProducto": 1,
+          "producto": "CUADERNO LORO",
+          "precio": 4,
+          "cantidad": 3
+        }
+      ]
+    },
+    {
+      "idVenta": 2,
+      "idUsuario": 2,
+      "cliente": "BANCO BCP",
+      "tipoComprobante": "FAC",
+      "serieComprobante": "001",
+      "numeroComprobante": 10,
+      "importe": 26,
+      "productos": [
+        {
+          "idProducto": 1,
+          "producto": "LAPICERO PUNTA FINA",
+          "precio": 1,
+          "cantidad": 1
+        },
+        {
+          "idProducto": 2,
+          "producto": "LAPICERO PUNTA FINA",
+          "precio": 5,
+          "cantidad": 5.00
+        }
+      ]
+    }
+  ]
+}
