@@ -1,3 +1,5 @@
+import {Producto} from './producto.model';
+
 export interface Venta {
   idVenta : number,
   idUsuario: number,
@@ -6,5 +8,5 @@ export interface Venta {
   serieComprobante: number,
   numeroComprobante: number,
   importe: number,
-  productos: Array<any>
+  productos: Producto[]
 }

@@ -7,7 +7,7 @@ import {VentasComponent} from './ventas/ventas.component';
 
 
 // No va
-import {VentaNuevaComponent} from './ventas/venta-nueva/venta-nueva.component';
+import {VentaNuevaComponent} from "./ventas/venta-nueva/venta-nueva.component";
 import {VentaListaComponent} from './ventas/venta-lista/venta-lista.component';
 import {VentaDetalleComponent} from './ventas/venta-detalle/venta-detalle.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';

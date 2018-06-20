@@ -5,6 +5,7 @@ import {VentaListaComponent} from './venta-lista/venta-lista.component';
 import {VentaDetalleComponent} from './venta-detalle/venta-detalle.component';
 import {VentaNuevaComponent} from './venta-nueva/venta-nueva.component';
 import {RouterModule, Routes} from '@angular/router';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 const routes: Routes = [
@@ -24,6 +25,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
   declarations: [VentasComponent,

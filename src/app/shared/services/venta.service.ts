@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
-import {Usuario} from '../../models/usuario.model';
+
 import {HttpClient} from '@angular/common/http';
+import {Venta} from '../../models/venta.model';
 
 @Injectable()
 export class VentaService {
@@ -11,8 +12,11 @@ export class VentaService {
   ) {
 
   }
-  listVenta(idUsuario: number): Observable<Usuario[]> {
-    return this.http.get<Usuario[]>(`/api/ventas?idUsuario=${idUsuario}`);
+  listVenta(idUsuario: number): Observable<Venta[]> {
+    return this.http.get<Venta[]>(`/api/ventas?idUsuario=${idUsuario}`);
+  }
+  guardarVenta(venta: Venta): Observable <Venta>{
+    return this.http.post<Venta>('api/ventas', venta)
   }
 
 }
